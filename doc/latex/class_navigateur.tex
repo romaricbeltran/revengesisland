@@ -1,0 +1,301 @@
+\hypertarget{class_navigateur}{}\section{Référence de la classe Navigateur}
+\label{class_navigateur}\index{Navigateur@{Navigateur}}
+
+
+classe utilisée pour la gestion du \hyperlink{class_navigateur}{Navigateur(joueur)}. \hyperlink{class_navigateur}{Navigateur} hérite de la classe \hyperlink{class_object}{Object}.  
+
+
+
+
+{\ttfamily \#include $<$Navigateur.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Navigateur\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_navigateur}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_navigateur_a4a85323eec03cc4c708d6769bc25913f}{Navigateur} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \hyperlink{class_navigateur_ad70bb3a8f49254b3e1415b5fabc79473}{deplacement\+Gauche} (const \hyperlink{class_terrain}{Terrain} \&t)
+\begin{DoxyCompactList}\small\item\em Deplace le \hyperlink{class_navigateur}{Navigateur} d\textquotesingle{}un cran à gauche. \end{DoxyCompactList}\item 
+void \hyperlink{class_navigateur_a1cf57edc86607b309dd2ff77a6ebf535}{deplacement\+Droite} (const \hyperlink{class_terrain}{Terrain} \&t)
+\begin{DoxyCompactList}\small\item\em Deplace le \hyperlink{class_navigateur}{Navigateur} d\textquotesingle{}un cran à droite. \end{DoxyCompactList}\item 
+void \hyperlink{class_navigateur_a87c978de070d8fb88ea14c4383009246}{deplacement\+Haut} (const \hyperlink{class_terrain}{Terrain} \&t)
+\begin{DoxyCompactList}\small\item\em Deplace le \hyperlink{class_navigateur}{Navigateur} d\textquotesingle{}un cran en haut. \end{DoxyCompactList}\item 
+void \hyperlink{class_navigateur_a0b8f8dff62930f05df3f8ab758396286}{deplacement\+Bas} (const \hyperlink{class_terrain}{Terrain} \&t)
+\begin{DoxyCompactList}\small\item\em Deplace le \hyperlink{class_navigateur}{Navigateur} d\textquotesingle{}un cran en bas. \end{DoxyCompactList}\item 
+int \hyperlink{class_navigateur_a02507fc847204a3650378b76072b3e30}{get\+Chance} () const
+\begin{DoxyCompactList}\small\item\em Accesseur de la class \hyperlink{class_navigateur}{Navigateur}. \end{DoxyCompactList}\item 
+int \hyperlink{class_navigateur_a52606df1f11308074aa64a81cc25e467}{get\+Score} () const
+\begin{DoxyCompactList}\small\item\em Accesseur de la class \hyperlink{class_navigateur}{Navigateur}. \end{DoxyCompactList}\item 
+int \hyperlink{class_navigateur_a904f67b146dbb561d72cc38ead3d7318}{get\+Niv} () const
+\begin{DoxyCompactList}\small\item\em Accesseur de la class \hyperlink{class_navigateur}{Navigateur}. \end{DoxyCompactList}\item 
+void \hyperlink{class_navigateur_a4b626cdf47683b637b1e9e000fae467b}{set\+Chance} (int n)
+\begin{DoxyCompactList}\small\item\em Mutateur de la class \hyperlink{class_navigateur}{Navigateur}. \end{DoxyCompactList}\item 
+void \hyperlink{class_navigateur_a85b21f5d57ed9e03e3276c369eb00fd7}{set\+Score} (int s)
+\begin{DoxyCompactList}\small\item\em Mutateur de la class \hyperlink{class_navigateur}{Navigateur}. \end{DoxyCompactList}\item 
+void \hyperlink{class_navigateur_af5d5be24410820dfebd15fb5b0966920}{set\+Niv} (int ni)
+\begin{DoxyCompactList}\small\item\em Mutateur de la class \hyperlink{class_navigateur}{Navigateur}. \end{DoxyCompactList}\item 
+void \hyperlink{class_navigateur_acfd9f284039fa874e7dc146c5cbc9867}{Gestion\+Vie} ()
+\begin{DoxyCompactList}\small\item\em Enlève une chance si le navigateur tombe à 0 point de vie et \char`\"{}recommence la partie\char`\"{}, si le navigateur n\textquotesingle{}a plus de vie on sort du programme. \end{DoxyCompactList}\item 
+void \hyperlink{class_navigateur_a975f7dc7ac781d977090c75050a1920c}{attaque} (\hyperlink{class_ennemi}{Ennemi} \&p, const \hyperlink{class_terrain}{Terrain} \&t, \hyperlink{class_shoot}{Shoot} \&b)
+\begin{DoxyCompactList}\small\item\em Le navigateur tire et augmente le score de 5 si le shoot touche l\textquotesingle{}ennemi, et le niveau de 1 si l\textquotesingle{}ennemi meurt. \end{DoxyCompactList}\item 
+bool \hyperlink{class_navigateur_a7d7e08b7a2ace26acdb059af247889e3}{collision} (\hyperlink{class_ennemi}{Ennemi} \&p, const \hyperlink{class_terrain}{Terrain} \&t, \hyperlink{class_shoot}{Shoot} \&b)
+\begin{DoxyCompactList}\small\item\em Renvoie true si le shoot du navigateur rencontre la position de l\textquotesingle{}ennemi et inflige des dégats à ce dernier, sinon renvoie false. \end{DoxyCompactList}\item 
+void \hyperlink{class_navigateur_a082da7d5d52c149fa234cb856e19c455}{Deplacement\+Shoot} (\hyperlink{class_shoot}{Shoot} \&bn, const \hyperlink{class_terrain}{Terrain} \&t)
+\begin{DoxyCompactList}\small\item\em Déplace le shoot du \hyperlink{class_navigateur}{Navigateur} d\textquotesingle{}un cran à gauche si la position qui suit celui-\/ci est libre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_navigateur_ab6a02c421ddd9d1d5951530b82db6573}{n\+\_\+chance}
+\item 
+int \hyperlink{class_navigateur_acfbec2e6b65cfe62b591becb70ea0105}{score}
+\item 
+int \hyperlink{class_navigateur_a1451d9d6397ad3869617876b178324e9}{niv}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+classe utilisée pour la gestion du \hyperlink{class_navigateur}{Navigateur(joueur)}. \hyperlink{class_navigateur}{Navigateur} hérite de la classe \hyperlink{class_object}{Object}. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em n\+\_\+chance} & Nombre de morts possible du \hyperlink{class_navigateur}{Navigateur} avant défaite. \\
+\hline
+\mbox{\tt in}  & {\em score} & Score du \hyperlink{class_navigateur}{Navigateur} \\
+\hline
+\mbox{\tt in}  & {\em niv} & Niveau du \hyperlink{class_navigateur}{Navigateur} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_navigateur_a4a85323eec03cc4c708d6769bc25913f}\label{class_navigateur_a4a85323eec03cc4c708d6769bc25913f}} 
+\index{Navigateur@{Navigateur}!Navigateur@{Navigateur}}
+\index{Navigateur@{Navigateur}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{Navigateur()}{Navigateur()}}
+{\footnotesize\ttfamily Navigateur\+::\+Navigateur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+Constructeur par défaut de la classe \hyperlink{class_navigateur}{Navigateur} 
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_navigateur_a975f7dc7ac781d977090c75050a1920c}\label{class_navigateur_a975f7dc7ac781d977090c75050a1920c}} 
+\index{Navigateur@{Navigateur}!attaque@{attaque}}
+\index{attaque@{attaque}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{attaque()}{attaque()}}
+{\footnotesize\ttfamily void Navigateur\+::attaque (\begin{DoxyParamCaption}\item[{\hyperlink{class_ennemi}{Ennemi} \&}]{p,  }\item[{const \hyperlink{class_terrain}{Terrain} \&}]{t,  }\item[{\hyperlink{class_shoot}{Shoot} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Le navigateur tire et augmente le score de 5 si le shoot touche l\textquotesingle{}ennemi, et le niveau de 1 si l\textquotesingle{}ennemi meurt. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & \+: référence sur \hyperlink{class_ennemi}{Ennemi} \\
+\hline
+{\em t} & \+: de type \hyperlink{class_terrain}{Terrain} \\
+\hline
+{\em b} & \+: de type \hyperlink{class_shoot}{Shoot} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_navigateur_a7d7e08b7a2ace26acdb059af247889e3}\label{class_navigateur_a7d7e08b7a2ace26acdb059af247889e3}} 
+\index{Navigateur@{Navigateur}!collision@{collision}}
+\index{collision@{collision}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{collision()}{collision()}}
+{\footnotesize\ttfamily bool Navigateur\+::collision (\begin{DoxyParamCaption}\item[{\hyperlink{class_ennemi}{Ennemi} \&}]{p,  }\item[{const \hyperlink{class_terrain}{Terrain} \&}]{t,  }\item[{\hyperlink{class_shoot}{Shoot} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Renvoie true si le shoot du navigateur rencontre la position de l\textquotesingle{}ennemi et inflige des dégats à ce dernier, sinon renvoie false. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & \+: référence sur \hyperlink{class_ennemi}{Ennemi} \\
+\hline
+{\em t} & \+: de type \hyperlink{class_terrain}{Terrain} \\
+\hline
+{\em b} & \+: de type \hyperlink{class_shoot}{Shoot} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_navigateur_a0b8f8dff62930f05df3f8ab758396286}\label{class_navigateur_a0b8f8dff62930f05df3f8ab758396286}} 
+\index{Navigateur@{Navigateur}!deplacement\+Bas@{deplacement\+Bas}}
+\index{deplacement\+Bas@{deplacement\+Bas}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{deplacement\+Bas()}{deplacementBas()}}
+{\footnotesize\ttfamily void Navigateur\+::deplacement\+Bas (\begin{DoxyParamCaption}\item[{const \hyperlink{class_terrain}{Terrain} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Deplace le \hyperlink{class_navigateur}{Navigateur} d\textquotesingle{}un cran en bas. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & \+: de type \hyperlink{class_terrain}{Terrain} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_navigateur_a1cf57edc86607b309dd2ff77a6ebf535}\label{class_navigateur_a1cf57edc86607b309dd2ff77a6ebf535}} 
+\index{Navigateur@{Navigateur}!deplacement\+Droite@{deplacement\+Droite}}
+\index{deplacement\+Droite@{deplacement\+Droite}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{deplacement\+Droite()}{deplacementDroite()}}
+{\footnotesize\ttfamily void Navigateur\+::deplacement\+Droite (\begin{DoxyParamCaption}\item[{const \hyperlink{class_terrain}{Terrain} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Deplace le \hyperlink{class_navigateur}{Navigateur} d\textquotesingle{}un cran à droite. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & \+: de type \hyperlink{class_terrain}{Terrain} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_navigateur_ad70bb3a8f49254b3e1415b5fabc79473}\label{class_navigateur_ad70bb3a8f49254b3e1415b5fabc79473}} 
+\index{Navigateur@{Navigateur}!deplacement\+Gauche@{deplacement\+Gauche}}
+\index{deplacement\+Gauche@{deplacement\+Gauche}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{deplacement\+Gauche()}{deplacementGauche()}}
+{\footnotesize\ttfamily void Navigateur\+::deplacement\+Gauche (\begin{DoxyParamCaption}\item[{const \hyperlink{class_terrain}{Terrain} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Deplace le \hyperlink{class_navigateur}{Navigateur} d\textquotesingle{}un cran à gauche. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & \+: de type \hyperlink{class_terrain}{Terrain} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_navigateur_a87c978de070d8fb88ea14c4383009246}\label{class_navigateur_a87c978de070d8fb88ea14c4383009246}} 
+\index{Navigateur@{Navigateur}!deplacement\+Haut@{deplacement\+Haut}}
+\index{deplacement\+Haut@{deplacement\+Haut}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{deplacement\+Haut()}{deplacementHaut()}}
+{\footnotesize\ttfamily void Navigateur\+::deplacement\+Haut (\begin{DoxyParamCaption}\item[{const \hyperlink{class_terrain}{Terrain} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Deplace le \hyperlink{class_navigateur}{Navigateur} d\textquotesingle{}un cran en haut. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & \+: de type \hyperlink{class_terrain}{Terrain} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_navigateur_a082da7d5d52c149fa234cb856e19c455}\label{class_navigateur_a082da7d5d52c149fa234cb856e19c455}} 
+\index{Navigateur@{Navigateur}!Deplacement\+Shoot@{Deplacement\+Shoot}}
+\index{Deplacement\+Shoot@{Deplacement\+Shoot}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{Deplacement\+Shoot()}{DeplacementShoot()}}
+{\footnotesize\ttfamily void Navigateur\+::\+Deplacement\+Shoot (\begin{DoxyParamCaption}\item[{\hyperlink{class_shoot}{Shoot} \&}]{bn,  }\item[{const \hyperlink{class_terrain}{Terrain} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Déplace le shoot du \hyperlink{class_navigateur}{Navigateur} d\textquotesingle{}un cran à gauche si la position qui suit celui-\/ci est libre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & \+: de type \hyperlink{class_terrain}{Terrain} \\
+\hline
+{\em bn} & \+: de type \hyperlink{class_shoot}{Shoot} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_navigateur_acfd9f284039fa874e7dc146c5cbc9867}\label{class_navigateur_acfd9f284039fa874e7dc146c5cbc9867}} 
+\index{Navigateur@{Navigateur}!Gestion\+Vie@{Gestion\+Vie}}
+\index{Gestion\+Vie@{Gestion\+Vie}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{Gestion\+Vie()}{GestionVie()}}
+{\footnotesize\ttfamily void Navigateur\+::\+Gestion\+Vie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enlève une chance si le navigateur tombe à 0 point de vie et \char`\"{}recommence la partie\char`\"{}, si le navigateur n\textquotesingle{}a plus de vie on sort du programme. 
+
+\mbox{\Hypertarget{class_navigateur_a02507fc847204a3650378b76072b3e30}\label{class_navigateur_a02507fc847204a3650378b76072b3e30}} 
+\index{Navigateur@{Navigateur}!get\+Chance@{get\+Chance}}
+\index{get\+Chance@{get\+Chance}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{get\+Chance()}{getChance()}}
+{\footnotesize\ttfamily int Navigateur\+::get\+Chance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de la class \hyperlink{class_navigateur}{Navigateur}. 
+
+int \hyperlink{class_navigateur_a02507fc847204a3650378b76072b3e30}{get\+Chance() const}; \mbox{\Hypertarget{class_navigateur_a904f67b146dbb561d72cc38ead3d7318}\label{class_navigateur_a904f67b146dbb561d72cc38ead3d7318}} 
+\index{Navigateur@{Navigateur}!get\+Niv@{get\+Niv}}
+\index{get\+Niv@{get\+Niv}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{get\+Niv()}{getNiv()}}
+{\footnotesize\ttfamily int Navigateur\+::get\+Niv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de la class \hyperlink{class_navigateur}{Navigateur}. 
+
+int \hyperlink{class_navigateur_a904f67b146dbb561d72cc38ead3d7318}{get\+Niv() const}; \mbox{\Hypertarget{class_navigateur_a52606df1f11308074aa64a81cc25e467}\label{class_navigateur_a52606df1f11308074aa64a81cc25e467}} 
+\index{Navigateur@{Navigateur}!get\+Score@{get\+Score}}
+\index{get\+Score@{get\+Score}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{get\+Score()}{getScore()}}
+{\footnotesize\ttfamily int Navigateur\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de la class \hyperlink{class_navigateur}{Navigateur}. 
+
+int \hyperlink{class_navigateur_a52606df1f11308074aa64a81cc25e467}{get\+Score() const}; \mbox{\Hypertarget{class_navigateur_a4b626cdf47683b637b1e9e000fae467b}\label{class_navigateur_a4b626cdf47683b637b1e9e000fae467b}} 
+\index{Navigateur@{Navigateur}!set\+Chance@{set\+Chance}}
+\index{set\+Chance@{set\+Chance}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{set\+Chance()}{setChance()}}
+{\footnotesize\ttfamily void Navigateur\+::set\+Chance (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Mutateur de la class \hyperlink{class_navigateur}{Navigateur}. 
+
+void \hyperlink{class_navigateur_a4b626cdf47683b637b1e9e000fae467b}{set\+Chance(int n)}; \mbox{\Hypertarget{class_navigateur_af5d5be24410820dfebd15fb5b0966920}\label{class_navigateur_af5d5be24410820dfebd15fb5b0966920}} 
+\index{Navigateur@{Navigateur}!set\+Niv@{set\+Niv}}
+\index{set\+Niv@{set\+Niv}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{set\+Niv()}{setNiv()}}
+{\footnotesize\ttfamily void Navigateur\+::set\+Niv (\begin{DoxyParamCaption}\item[{int}]{ni }\end{DoxyParamCaption})}
+
+
+
+Mutateur de la class \hyperlink{class_navigateur}{Navigateur}. 
+
+void \hyperlink{class_navigateur_af5d5be24410820dfebd15fb5b0966920}{set\+Niv(int ni)}; \mbox{\Hypertarget{class_navigateur_a85b21f5d57ed9e03e3276c369eb00fd7}\label{class_navigateur_a85b21f5d57ed9e03e3276c369eb00fd7}} 
+\index{Navigateur@{Navigateur}!set\+Score@{set\+Score}}
+\index{set\+Score@{set\+Score}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{set\+Score()}{setScore()}}
+{\footnotesize\ttfamily void Navigateur\+::set\+Score (\begin{DoxyParamCaption}\item[{int}]{s }\end{DoxyParamCaption})}
+
+
+
+Mutateur de la class \hyperlink{class_navigateur}{Navigateur}. 
+
+void \hyperlink{class_navigateur_a85b21f5d57ed9e03e3276c369eb00fd7}{set\+Score(int s)}; 
+
+\subsection{Documentation des données membres}
+\mbox{\Hypertarget{class_navigateur_ab6a02c421ddd9d1d5951530b82db6573}\label{class_navigateur_ab6a02c421ddd9d1d5951530b82db6573}} 
+\index{Navigateur@{Navigateur}!n\+\_\+chance@{n\+\_\+chance}}
+\index{n\+\_\+chance@{n\+\_\+chance}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{n\+\_\+chance}{n\_chance}}
+{\footnotesize\ttfamily int Navigateur\+::n\+\_\+chance\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_navigateur_a1451d9d6397ad3869617876b178324e9}\label{class_navigateur_a1451d9d6397ad3869617876b178324e9}} 
+\index{Navigateur@{Navigateur}!niv@{niv}}
+\index{niv@{niv}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{niv}{niv}}
+{\footnotesize\ttfamily int Navigateur\+::niv\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_navigateur_acfbec2e6b65cfe62b591becb70ea0105}\label{class_navigateur_acfbec2e6b65cfe62b591becb70ea0105}} 
+\index{Navigateur@{Navigateur}!score@{score}}
+\index{score@{score}!Navigateur@{Navigateur}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Navigateur\+::score\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Ragnar\+L/\+Documents/p1408299-\/p1309837/\+Revenges\+Island/src/core/\hyperlink{_navigateur_8h}{Navigateur.\+h}\item 
+C\+:/\+Users/\+Ragnar\+L/\+Documents/p1408299-\/p1309837/\+Revenges\+Island/src/core/\hyperlink{_navigateur_8cpp}{Navigateur.\+cpp}\end{DoxyCompactItemize}

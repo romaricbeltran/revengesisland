@@ -1,0 +1,52 @@
+# Ignore les fichiers générés par la compilation
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+
+# Ignore les répertoires d'objets et binaires
+obj/
+bin/
+
+# Fichiers spécifiques à l'éditeur
+.vscode/
+.idea/
+
+# Fichiers de configuration spécifiques aux outils de build
+Makefile.user
+Makefile.local
+CMakeCache.txt
+CMakeFiles/
+CMakeLists.txt.user
+CMakeLists.txt.local
+
+# Fichiers spécifiques à MinGW, MSYS
+*.exe
+*.dll
+
+# Fichiers de sauvegarde et de récupération
+*~
+*.bak
+*.swp
+
+# Fichiers générés par les IDE
+# Visual Studio
+.vs/
+# Xcode
+*.xcuserdata/
+
+# Fichiers temporaires de compilation
+*.d
+*.deps
+
+# Fichiers spécifiques à certains systèmes (ex: Linux)
+*.log
+
+# Ignore les fichiers de configuration spécifiques à SFML
+sfml-config.h
+
+# Fichiers de configuration pour le système de build
+*.dSYM/

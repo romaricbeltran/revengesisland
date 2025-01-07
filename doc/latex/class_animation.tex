@@ -1,0 +1,145 @@
+\hypertarget{class_animation}{}\section{Référence de la classe Animation}
+\label{class_animation}\index{Animation@{Animation}}
+
+
+classe utilisée pour la gestion des Objets.  
+
+
+
+
+{\ttfamily \#include $<$Animation.\+h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_animation_a83f0a16cef7117f187ad596de38dd9d6}{Animation} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{class_animation_ae7996741e4f76cd23626f60d6ad0e33b}{Animation} (sf\+::\+Texture \&t, int x, int y, int w, int h, int Count, float Speed)
+\begin{DoxyCompactList}\small\item\em Constructeur par copie. \end{DoxyCompactList}\item 
+void \hyperlink{class_animation_a4318baf0b0735e7da87b2c6d3d3a2705}{update} ()
+\begin{DoxyCompactList}\small\item\em update de la class animation \end{DoxyCompactList}\item 
+bool \hyperlink{class_animation_a145061ea983f4f4000155a0196f74bfc}{is\+End} ()
+\begin{DoxyCompactList}\small\item\em bool qui renvoit si true ou false en fonction de si l\textquotesingle{}animation est finie ou pas \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_animation_a2c7bd0213e063da804e2bec388587399}{Frame}
+\item 
+float \hyperlink{class_animation_a68079384a94a0ebdba03241f1937608e}{speed}
+\item 
+sf\+::\+Sprite \hyperlink{class_animation_a6c359fdd53ab0539caa9e073cc1b0613}{sp}
+\item 
+std\+::vector$<$ sf\+::\+Int\+Rect $>$ \hyperlink{class_animation_a25d2fc2d769f9ff7eda63bff7cd8e958}{frames}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+classe utilisée pour la gestion des Objets. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em Frame} & \+: flottant définit la position en abscisse de l\textquotesingle{}objet \\
+\hline
+\mbox{\tt in}  & {\em speed} & \+: flottant définit la position en ordonnée de l\textquotesingle{}objet \\
+\hline
+\mbox{\tt in}  & {\em frames} & \+: Vecteur de type Int\+Rect contenant les différence frames de l\textquotesingle{}animation \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_animation_a83f0a16cef7117f187ad596de38dd9d6}\label{class_animation_a83f0a16cef7117f187ad596de38dd9d6}} 
+\index{Animation@{Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{Animation()}{Animation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Animation\+::\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+Constructeur par défaut de la classe \hyperlink{class_animation}{Animation} \mbox{\Hypertarget{class_animation_ae7996741e4f76cd23626f60d6ad0e33b}\label{class_animation_ae7996741e4f76cd23626f60d6ad0e33b}} 
+\index{Animation@{Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{Animation()}{Animation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Animation\+::\+Animation (\begin{DoxyParamCaption}\item[{sf\+::\+Texture \&}]{t,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{int}]{Count,  }\item[{float}]{Speed }\end{DoxyParamCaption})}
+
+
+
+Constructeur par copie. 
+
+Constructeur par copie de la classe \hyperlink{class_animation}{Animation}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & \+: Référence sur texture \\
+\hline
+{\em x} & \+: positions selon les x \\
+\hline
+{\em y} & \+: positions selon les y \\
+\hline
+{\em w} & \+: largeur de l\textquotesingle{}image \\
+\hline
+{\em h} & \+: hauteur de l\textquotesingle{}image \\
+\hline
+{\em Count} & \+: nombre d\textquotesingle{}image du sprite \\
+\hline
+{\em Speed} & \+: vitesse d\textquotesingle{}affichage \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_animation_a145061ea983f4f4000155a0196f74bfc}\label{class_animation_a145061ea983f4f4000155a0196f74bfc}} 
+\index{Animation@{Animation}!is\+End@{is\+End}}
+\index{is\+End@{is\+End}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{is\+End()}{isEnd()}}
+{\footnotesize\ttfamily bool Animation\+::is\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+bool qui renvoit si true ou false en fonction de si l\textquotesingle{}animation est finie ou pas 
+
+bool \hyperlink{class_animation_a145061ea983f4f4000155a0196f74bfc}{is\+End()}; \mbox{\Hypertarget{class_animation_a4318baf0b0735e7da87b2c6d3d3a2705}\label{class_animation_a4318baf0b0735e7da87b2c6d3d3a2705}} 
+\index{Animation@{Animation}!update@{update}}
+\index{update@{update}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Animation\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+update de la class animation 
+
+void \hyperlink{class_animation_a4318baf0b0735e7da87b2c6d3d3a2705}{update()}; 
+
+\subsection{Documentation des données membres}
+\mbox{\Hypertarget{class_animation_a2c7bd0213e063da804e2bec388587399}\label{class_animation_a2c7bd0213e063da804e2bec388587399}} 
+\index{Animation@{Animation}!Frame@{Frame}}
+\index{Frame@{Frame}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{Frame}{Frame}}
+{\footnotesize\ttfamily float Animation\+::\+Frame}
+
+\mbox{\Hypertarget{class_animation_a25d2fc2d769f9ff7eda63bff7cd8e958}\label{class_animation_a25d2fc2d769f9ff7eda63bff7cd8e958}} 
+\index{Animation@{Animation}!frames@{frames}}
+\index{frames@{frames}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{frames}{frames}}
+{\footnotesize\ttfamily std\+::vector$<$sf\+::\+Int\+Rect$>$ Animation\+::frames}
+
+\mbox{\Hypertarget{class_animation_a6c359fdd53ab0539caa9e073cc1b0613}\label{class_animation_a6c359fdd53ab0539caa9e073cc1b0613}} 
+\index{Animation@{Animation}!sp@{sp}}
+\index{sp@{sp}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{sp}{sp}}
+{\footnotesize\ttfamily sf\+::\+Sprite Animation\+::sp}
+
+\mbox{\Hypertarget{class_animation_a68079384a94a0ebdba03241f1937608e}\label{class_animation_a68079384a94a0ebdba03241f1937608e}} 
+\index{Animation@{Animation}!speed@{speed}}
+\index{speed@{speed}!Animation@{Animation}}
+\subsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Animation\+::speed}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Ragnar\+L/\+Documents/p1408299-\/p1309837/\+Revenges\+Island/src/sfml/\hyperlink{_animation_8h}{Animation.\+h}\item 
+C\+:/\+Users/\+Ragnar\+L/\+Documents/p1408299-\/p1309837/\+Revenges\+Island/src/sfml/\hyperlink{_animation_8cpp}{Animation.\+cpp}\end{DoxyCompactItemize}

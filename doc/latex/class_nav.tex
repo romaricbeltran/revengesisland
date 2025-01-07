@@ -1,0 +1,223 @@
+\hypertarget{class_nav}{}\section{Référence de la classe Nav}
+\label{class_nav}\index{Nav@{Nav}}
+
+
+{\ttfamily \#include $<$Nav.\+h$>$}
+
+\subsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_nav_a08a9562b15243f3e42d98588db65090e}{Dir} \{ \hyperlink{class_nav_a08a9562b15243f3e42d98588db65090ea31f26a8a719a720338911f55bdc7795c}{Up}, 
+\hyperlink{class_nav_a08a9562b15243f3e42d98588db65090ead8e466e526a3644f8729a93b8a353759}{Right}, 
+\hyperlink{class_nav_a08a9562b15243f3e42d98588db65090ea2b91c812608ee39ea6dca48340e5b213}{Down}, 
+\hyperlink{class_nav_a08a9562b15243f3e42d98588db65090eabb294d0e7ad76e4b48f5006a46ef15f5}{Left}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_nav_a5e44bdaf95a13d5e265c17f3168182f8}{Nav} ()
+\item 
+\hyperlink{class_nav_a8a16a4104858c5c76ab490157d77bc29}{$\sim$\+Nav} ()
+\item 
+void \hyperlink{class_nav_a993a0ca0a3bedb5c5d8717edad632bfb}{Camera\+Perso} ()
+\item 
+void \hyperlink{class_nav_ac9460667c27ef1258d96ac8468cf61d8}{Fps\+Perso} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_nav_a57807c54c5dc53beebce07c2d626cd43}{vie}
+\item 
+std\+::string \hyperlink{class_nav_af809c7fbbdfdee3a6cfc2151f8fc1e41}{nom}
+\item 
+sf\+::\+Sprite \hyperlink{class_nav_a6a14afd015bebcb30767bc60de20dde7}{sprite\+\_\+perso}
+\item 
+sf\+::\+Texture \hyperlink{class_nav_a546e6ebedbfb271ea7070cce2cfcaa7f}{perso}
+\item 
+bool \hyperlink{class_nav_a5847e7ce67da84ebd4a9c573c296130f}{aff\+\_\+allie1} =false
+\item 
+bool \hyperlink{class_nav_a043c88faeaccbaa50b3ac62e4a5ac9e8}{can\+\_\+shoot1} =false
+\item 
+sf\+::\+Sprite \hyperlink{class_nav_a7fd1b2f3e91bda41432ae8638eed802e}{sprite\+\_\+allie1}
+\item 
+sf\+::\+Texture \hyperlink{class_nav_a055298afaad86874d561bfcebaa02c63}{allie}
+\item 
+sf\+::\+View \hyperlink{class_nav_ac7f11f43ef94d2a0491c0ec7bf0a6e1b}{view}
+\item 
+sf\+::\+Vector2i \hyperlink{class_nav_ae0e15b708bdcda1b96cac062f85aae84}{anim} =sf\+::\+Vector2i(1,\hyperlink{class_nav_a08a9562b15243f3e42d98588db65090ea2b91c812608ee39ea6dca48340e5b213}{Down})
+\item 
+sf\+::\+Vector2f \hyperlink{class_nav_ae2c6a22f80dd0532d679a3ff921c8990}{position} =sf\+::\+Vector2f(400,300)
+\item 
+bool \hyperlink{class_nav_a47c891b239ec0f1be55573ca4d2a6473}{update\+F\+PS} = true
+\item 
+sf\+::\+Clock \hyperlink{class_nav_a4db5ddb6de6409c35c924b3938ffdc60}{time}
+\item 
+sf\+::\+Vector2i \hyperlink{class_nav_ae8ee5f25cef0d0877d9af9a5cda0284b}{animA} =sf\+::\+Vector2i(1,\hyperlink{class_nav_a08a9562b15243f3e42d98588db65090ea2b91c812608ee39ea6dca48340e5b213}{Down})
+\item 
+sf\+::\+Vector2f \hyperlink{class_nav_a2507d20e69ae0ac8e929004a6dd737d3}{positionA} =sf\+::\+Vector2f(400,300)
+\item 
+bool \hyperlink{class_nav_a8dab5ad66c36689415fa90aa058c0aa7}{update\+F\+P\+SA} = true
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{class_nav_a08a9562b15243f3e42d98588db65090e}\label{class_nav_a08a9562b15243f3e42d98588db65090e}} 
+\index{Nav@{Nav}!Dir@{Dir}}
+\index{Dir@{Dir}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{Dir}{Dir}}
+{\footnotesize\ttfamily enum \hyperlink{class_nav_a08a9562b15243f3e42d98588db65090e}{Nav\+::\+Dir}}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Up@{Up}!Nav@{Nav}}\index{Nav@{Nav}!Up@{Up}}}\mbox{\Hypertarget{class_nav_a08a9562b15243f3e42d98588db65090ea31f26a8a719a720338911f55bdc7795c}\label{class_nav_a08a9562b15243f3e42d98588db65090ea31f26a8a719a720338911f55bdc7795c}} 
+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right@{Right}!Nav@{Nav}}\index{Nav@{Nav}!Right@{Right}}}\mbox{\Hypertarget{class_nav_a08a9562b15243f3e42d98588db65090ead8e466e526a3644f8729a93b8a353759}\label{class_nav_a08a9562b15243f3e42d98588db65090ead8e466e526a3644f8729a93b8a353759}} 
+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Down@{Down}!Nav@{Nav}}\index{Nav@{Nav}!Down@{Down}}}\mbox{\Hypertarget{class_nav_a08a9562b15243f3e42d98588db65090ea2b91c812608ee39ea6dca48340e5b213}\label{class_nav_a08a9562b15243f3e42d98588db65090ea2b91c812608ee39ea6dca48340e5b213}} 
+Down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left@{Left}!Nav@{Nav}}\index{Nav@{Nav}!Left@{Left}}}\mbox{\Hypertarget{class_nav_a08a9562b15243f3e42d98588db65090eabb294d0e7ad76e4b48f5006a46ef15f5}\label{class_nav_a08a9562b15243f3e42d98588db65090eabb294d0e7ad76e4b48f5006a46ef15f5}} 
+Left&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_nav_a5e44bdaf95a13d5e265c17f3168182f8}\label{class_nav_a5e44bdaf95a13d5e265c17f3168182f8}} 
+\index{Nav@{Nav}!Nav@{Nav}}
+\index{Nav@{Nav}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{Nav()}{Nav()}}
+{\footnotesize\ttfamily Nav\+::\+Nav (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_nav_a8a16a4104858c5c76ab490157d77bc29}\label{class_nav_a8a16a4104858c5c76ab490157d77bc29}} 
+\index{Nav@{Nav}!````~Nav@{$\sim$\+Nav}}
+\index{````~Nav@{$\sim$\+Nav}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{$\sim$\+Nav()}{~Nav()}}
+{\footnotesize\ttfamily Nav\+::$\sim$\+Nav (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_nav_a993a0ca0a3bedb5c5d8717edad632bfb}\label{class_nav_a993a0ca0a3bedb5c5d8717edad632bfb}} 
+\index{Nav@{Nav}!Camera\+Perso@{Camera\+Perso}}
+\index{Camera\+Perso@{Camera\+Perso}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{Camera\+Perso()}{CameraPerso()}}
+{\footnotesize\ttfamily void Nav\+::\+Camera\+Perso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_nav_ac9460667c27ef1258d96ac8468cf61d8}\label{class_nav_ac9460667c27ef1258d96ac8468cf61d8}} 
+\index{Nav@{Nav}!Fps\+Perso@{Fps\+Perso}}
+\index{Fps\+Perso@{Fps\+Perso}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{Fps\+Perso()}{FpsPerso()}}
+{\footnotesize\ttfamily void Nav\+::\+Fps\+Perso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Documentation des données membres}
+\mbox{\Hypertarget{class_nav_a5847e7ce67da84ebd4a9c573c296130f}\label{class_nav_a5847e7ce67da84ebd4a9c573c296130f}} 
+\index{Nav@{Nav}!aff\+\_\+allie1@{aff\+\_\+allie1}}
+\index{aff\+\_\+allie1@{aff\+\_\+allie1}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{aff\+\_\+allie1}{aff\_allie1}}
+{\footnotesize\ttfamily bool Nav\+::aff\+\_\+allie1 =false}
+
+\mbox{\Hypertarget{class_nav_a055298afaad86874d561bfcebaa02c63}\label{class_nav_a055298afaad86874d561bfcebaa02c63}} 
+\index{Nav@{Nav}!allie@{allie}}
+\index{allie@{allie}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{allie}{allie}}
+{\footnotesize\ttfamily sf\+::\+Texture Nav\+::allie}
+
+\mbox{\Hypertarget{class_nav_ae0e15b708bdcda1b96cac062f85aae84}\label{class_nav_ae0e15b708bdcda1b96cac062f85aae84}} 
+\index{Nav@{Nav}!anim@{anim}}
+\index{anim@{anim}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{anim}{anim}}
+{\footnotesize\ttfamily sf\+::\+Vector2i Nav\+::anim =sf\+::\+Vector2i(1,\hyperlink{class_nav_a08a9562b15243f3e42d98588db65090ea2b91c812608ee39ea6dca48340e5b213}{Down})}
+
+\mbox{\Hypertarget{class_nav_ae8ee5f25cef0d0877d9af9a5cda0284b}\label{class_nav_ae8ee5f25cef0d0877d9af9a5cda0284b}} 
+\index{Nav@{Nav}!animA@{animA}}
+\index{animA@{animA}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{animA}{animA}}
+{\footnotesize\ttfamily sf\+::\+Vector2i Nav\+::animA =sf\+::\+Vector2i(1,\hyperlink{class_nav_a08a9562b15243f3e42d98588db65090ea2b91c812608ee39ea6dca48340e5b213}{Down})}
+
+\mbox{\Hypertarget{class_nav_a043c88faeaccbaa50b3ac62e4a5ac9e8}\label{class_nav_a043c88faeaccbaa50b3ac62e4a5ac9e8}} 
+\index{Nav@{Nav}!can\+\_\+shoot1@{can\+\_\+shoot1}}
+\index{can\+\_\+shoot1@{can\+\_\+shoot1}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{can\+\_\+shoot1}{can\_shoot1}}
+{\footnotesize\ttfamily bool Nav\+::can\+\_\+shoot1 =false}
+
+\mbox{\Hypertarget{class_nav_af809c7fbbdfdee3a6cfc2151f8fc1e41}\label{class_nav_af809c7fbbdfdee3a6cfc2151f8fc1e41}} 
+\index{Nav@{Nav}!nom@{nom}}
+\index{nom@{nom}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily std\+::string Nav\+::nom}
+
+\mbox{\Hypertarget{class_nav_a546e6ebedbfb271ea7070cce2cfcaa7f}\label{class_nav_a546e6ebedbfb271ea7070cce2cfcaa7f}} 
+\index{Nav@{Nav}!perso@{perso}}
+\index{perso@{perso}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{perso}{perso}}
+{\footnotesize\ttfamily sf\+::\+Texture Nav\+::perso}
+
+\mbox{\Hypertarget{class_nav_ae2c6a22f80dd0532d679a3ff921c8990}\label{class_nav_ae2c6a22f80dd0532d679a3ff921c8990}} 
+\index{Nav@{Nav}!position@{position}}
+\index{position@{position}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Nav\+::position =sf\+::\+Vector2f(400,300)}
+
+\mbox{\Hypertarget{class_nav_a2507d20e69ae0ac8e929004a6dd737d3}\label{class_nav_a2507d20e69ae0ac8e929004a6dd737d3}} 
+\index{Nav@{Nav}!positionA@{positionA}}
+\index{positionA@{positionA}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{positionA}{positionA}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Nav\+::positionA =sf\+::\+Vector2f(400,300)}
+
+\mbox{\Hypertarget{class_nav_a7fd1b2f3e91bda41432ae8638eed802e}\label{class_nav_a7fd1b2f3e91bda41432ae8638eed802e}} 
+\index{Nav@{Nav}!sprite\+\_\+allie1@{sprite\+\_\+allie1}}
+\index{sprite\+\_\+allie1@{sprite\+\_\+allie1}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{sprite\+\_\+allie1}{sprite\_allie1}}
+{\footnotesize\ttfamily sf\+::\+Sprite Nav\+::sprite\+\_\+allie1}
+
+\mbox{\Hypertarget{class_nav_a6a14afd015bebcb30767bc60de20dde7}\label{class_nav_a6a14afd015bebcb30767bc60de20dde7}} 
+\index{Nav@{Nav}!sprite\+\_\+perso@{sprite\+\_\+perso}}
+\index{sprite\+\_\+perso@{sprite\+\_\+perso}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{sprite\+\_\+perso}{sprite\_perso}}
+{\footnotesize\ttfamily sf\+::\+Sprite Nav\+::sprite\+\_\+perso}
+
+\mbox{\Hypertarget{class_nav_a4db5ddb6de6409c35c924b3938ffdc60}\label{class_nav_a4db5ddb6de6409c35c924b3938ffdc60}} 
+\index{Nav@{Nav}!time@{time}}
+\index{time@{time}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily sf\+::\+Clock Nav\+::time}
+
+\mbox{\Hypertarget{class_nav_a47c891b239ec0f1be55573ca4d2a6473}\label{class_nav_a47c891b239ec0f1be55573ca4d2a6473}} 
+\index{Nav@{Nav}!update\+F\+PS@{update\+F\+PS}}
+\index{update\+F\+PS@{update\+F\+PS}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{update\+F\+PS}{updateFPS}}
+{\footnotesize\ttfamily bool Nav\+::update\+F\+PS = true}
+
+\mbox{\Hypertarget{class_nav_a8dab5ad66c36689415fa90aa058c0aa7}\label{class_nav_a8dab5ad66c36689415fa90aa058c0aa7}} 
+\index{Nav@{Nav}!update\+F\+P\+SA@{update\+F\+P\+SA}}
+\index{update\+F\+P\+SA@{update\+F\+P\+SA}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{update\+F\+P\+SA}{updateFPSA}}
+{\footnotesize\ttfamily bool Nav\+::update\+F\+P\+SA = true}
+
+\mbox{\Hypertarget{class_nav_a57807c54c5dc53beebce07c2d626cd43}\label{class_nav_a57807c54c5dc53beebce07c2d626cd43}} 
+\index{Nav@{Nav}!vie@{vie}}
+\index{vie@{vie}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{vie}{vie}}
+{\footnotesize\ttfamily bool Nav\+::vie}
+
+\mbox{\Hypertarget{class_nav_ac7f11f43ef94d2a0491c0ec7bf0a6e1b}\label{class_nav_ac7f11f43ef94d2a0491c0ec7bf0a6e1b}} 
+\index{Nav@{Nav}!view@{view}}
+\index{view@{view}!Nav@{Nav}}
+\subsubsection{\texorpdfstring{view}{view}}
+{\footnotesize\ttfamily sf\+::\+View Nav\+::view}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Ragnar\+L/\+Documents/p1408299-\/p1309837/\+Revenges\+Island/src/sfml/\hyperlink{_nav_8h}{Nav.\+h}\item 
+C\+:/\+Users/\+Ragnar\+L/\+Documents/p1408299-\/p1309837/\+Revenges\+Island/src/sfml/\hyperlink{_nav_8cpp}{Nav.\+cpp}\end{DoxyCompactItemize}

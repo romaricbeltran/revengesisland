@@ -1,0 +1,85 @@
+\hypertarget{class_ennemi}{}\section{Référence de la classe Ennemi}
+\label{class_ennemi}\index{Ennemi@{Ennemi}}
+
+
+classe utilisée pour la gestion de l\textquotesingle{}\hyperlink{class_ennemi}{Ennemi}. \hyperlink{class_ennemi}{Ennemi} hérite de la classe \hyperlink{class_object}{Object}.  
+
+
+
+
+{\ttfamily \#include $<$Ennemi.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Ennemi\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ennemi}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ennemi_a9c5eb7ca82848b97f3dcf262fe625b3a}{Ennemi} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \hyperlink{class_ennemi_a649379ddaf7698276d924f48d56d87c5}{Deplace\+X\+Auto} (const \hyperlink{class_terrain}{Terrain} \&t)
+\begin{DoxyCompactList}\small\item\em Deplace l\textquotesingle{}ennemi aléatoirement d\textquotesingle{}un cran en haut à gauche à droite ou à gauche. \end{DoxyCompactList}\item 
+void \hyperlink{class_ennemi_a248d1bb99ad000f7dabbef353086ab1e}{Tir\+Auto} (\hyperlink{class_navigateur}{Navigateur} \&n, const \hyperlink{class_terrain}{Terrain} \&t, \hyperlink{class_shoot}{Shoot} \&be)
+\begin{DoxyCompactList}\small\item\em Deplace le shoot de l\textquotesingle{}\hyperlink{class_ennemi}{Ennemi} sur la droite si il n\textquotesingle{}y pas d\textquotesingle{}obstacle et si les coordonnées du shoot et du \hyperlink{class_navigateur}{Navigateur} se rencontre, applique la gestion des points de vie au \hyperlink{class_navigateur}{Navigateur}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+classe utilisée pour la gestion de l\textquotesingle{}\hyperlink{class_ennemi}{Ennemi}. \hyperlink{class_ennemi}{Ennemi} hérite de la classe \hyperlink{class_object}{Object}. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_ennemi_a9c5eb7ca82848b97f3dcf262fe625b3a}\label{class_ennemi_a9c5eb7ca82848b97f3dcf262fe625b3a}} 
+\index{Ennemi@{Ennemi}!Ennemi@{Ennemi}}
+\index{Ennemi@{Ennemi}!Ennemi@{Ennemi}}
+\subsubsection{\texorpdfstring{Ennemi()}{Ennemi()}}
+{\footnotesize\ttfamily Ennemi\+::\+Ennemi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+Constructeur par défaut de la classe \hyperlink{class_ennemi}{Ennemi} 
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_ennemi_a649379ddaf7698276d924f48d56d87c5}\label{class_ennemi_a649379ddaf7698276d924f48d56d87c5}} 
+\index{Ennemi@{Ennemi}!Deplace\+X\+Auto@{Deplace\+X\+Auto}}
+\index{Deplace\+X\+Auto@{Deplace\+X\+Auto}!Ennemi@{Ennemi}}
+\subsubsection{\texorpdfstring{Deplace\+X\+Auto()}{DeplaceXAuto()}}
+{\footnotesize\ttfamily void Ennemi\+::\+Deplace\+X\+Auto (\begin{DoxyParamCaption}\item[{const \hyperlink{class_terrain}{Terrain} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Deplace l\textquotesingle{}ennemi aléatoirement d\textquotesingle{}un cran en haut à gauche à droite ou à gauche. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em t} & \+: de type \hyperlink{class_terrain}{Terrain} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ennemi_a248d1bb99ad000f7dabbef353086ab1e}\label{class_ennemi_a248d1bb99ad000f7dabbef353086ab1e}} 
+\index{Ennemi@{Ennemi}!Tir\+Auto@{Tir\+Auto}}
+\index{Tir\+Auto@{Tir\+Auto}!Ennemi@{Ennemi}}
+\subsubsection{\texorpdfstring{Tir\+Auto()}{TirAuto()}}
+{\footnotesize\ttfamily void Ennemi\+::\+Tir\+Auto (\begin{DoxyParamCaption}\item[{\hyperlink{class_navigateur}{Navigateur} \&}]{n,  }\item[{const \hyperlink{class_terrain}{Terrain} \&}]{t,  }\item[{\hyperlink{class_shoot}{Shoot} \&}]{be }\end{DoxyParamCaption})}
+
+
+
+Deplace le shoot de l\textquotesingle{}\hyperlink{class_ennemi}{Ennemi} sur la droite si il n\textquotesingle{}y pas d\textquotesingle{}obstacle et si les coordonnées du shoot et du \hyperlink{class_navigateur}{Navigateur} se rencontre, applique la gestion des points de vie au \hyperlink{class_navigateur}{Navigateur}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em n} & \+: référence sur \hyperlink{class_navigateur}{Navigateur} \\
+\hline
+{\em t} & \+: de type \hyperlink{class_terrain}{Terrain} \\
+\hline
+{\em be} & \+: de type \hyperlink{class_shoot}{Shoot} \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Ragnar\+L/\+Documents/p1408299-\/p1309837/\+Revenges\+Island/src/core/\hyperlink{_ennemi_8h}{Ennemi.\+h}\item 
+C\+:/\+Users/\+Ragnar\+L/\+Documents/p1408299-\/p1309837/\+Revenges\+Island/src/core/\hyperlink{_ennemi_8cpp}{Ennemi.\+cpp}\end{DoxyCompactItemize}

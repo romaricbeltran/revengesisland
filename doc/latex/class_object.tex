@@ -1,0 +1,256 @@
+\hypertarget{class_object}{}\section{Référence de la classe Object}
+\label{class_object}\index{Object@{Object}}
+
+
+classe utilisée pour la gestion des Objets.  
+
+
+
+
+{\ttfamily \#include $<$Object.\+h$>$}
+
+Graphe d\textquotesingle{}héritage de Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_object}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_object_a40860402e64d8008fb42329df7097cdb}{Object} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{class_object_abdc77f1bc660f185ecf2fc1a628ea6eb}{Object} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Constructeur par copie. \end{DoxyCompactList}\item 
+int \hyperlink{class_object_ad7dcd5f1f45ce373c6e57bae5d1aebec}{get\+Pos\+\_\+x} () const
+\begin{DoxyCompactList}\small\item\em Accesseur de la class \hyperlink{class_object}{Object}. \end{DoxyCompactList}\item 
+int \hyperlink{class_object_a74b891ac92f211e8d8f9fd09d7822ec4}{get\+Pos\+\_\+y} () const
+\begin{DoxyCompactList}\small\item\em Accesseur de la class \hyperlink{class_object}{Object}. \end{DoxyCompactList}\item 
+int \hyperlink{class_object_ac2053fa5af98fc92a4c990946a926aa5}{get\+Dir} () const
+\begin{DoxyCompactList}\small\item\em Accesseur de la class \hyperlink{class_object}{Object}. \end{DoxyCompactList}\item 
+int \hyperlink{class_object_a334099b7bd5ecf8515a1e8f3d96ebba9}{get\+Vie} () const
+\begin{DoxyCompactList}\small\item\em Accesseur de la class \hyperlink{class_object}{Object}. \end{DoxyCompactList}\item 
+void \hyperlink{class_object_a65c8e1794d02320269340d22084d0807}{set\+Pos\+\_\+x} (int x)
+\begin{DoxyCompactList}\small\item\em Mutateur de la class \hyperlink{class_object}{Object}. \end{DoxyCompactList}\item 
+void \hyperlink{class_object_a35340b9a66cc2d561ad370783c41fcac}{set\+Pos\+\_\+y} (int y)
+\begin{DoxyCompactList}\small\item\em Mutateur de la class \hyperlink{class_object}{Object}. \end{DoxyCompactList}\item 
+void \hyperlink{class_object_a6d72ba9034f1ea3a0866574705e938d3}{set\+Dir} (int di)
+\begin{DoxyCompactList}\small\item\em Mutateur de la class \hyperlink{class_object}{Object}. \end{DoxyCompactList}\item 
+void \hyperlink{class_object_ac0880db52bcbcd3022278d62956d666e}{set\+Vie} (int v)
+\begin{DoxyCompactList}\small\item\em Mutateur de la class \hyperlink{class_object}{Object}. \end{DoxyCompactList}\item 
+void \hyperlink{class_object_a9e7f78b7cc24ebe4d11e8ce7b86c1d49}{set\+Position} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Mutateur de la class \hyperlink{class_object}{Object}. \end{DoxyCompactList}\item 
+void \hyperlink{class_object_a98f9245de6001ab13932531b047ba595}{recevoir\+Degats} (int nb\+Degats)
+\begin{DoxyCompactList}\small\item\em Enlève des points de vie à l\textquotesingle{}\hyperlink{class_objet}{Objet}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_object_ae013d3c24ca77287536bfc594f763b60}{est\+Vivant} ()
+\begin{DoxyCompactList}\small\item\em Renvoit true si l\textquotesingle{}\hyperlink{class_objet}{Objet} à encore des points de vie et false sinon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_object_a2fc9911a2ee453f97ccfad331dc29e3a}{pos\+\_\+x}
+\item 
+int \hyperlink{class_object_a5acac61f66b23f32ad2ed7aa2e93c307}{pos\+\_\+y}
+\item 
+int \hyperlink{class_object_a1267bc5eb5865f7ad9de7d822483c0e0}{dir}
+\item 
+int \hyperlink{class_object_a1710b8b8e0d814406f84ca905d411e69}{p\+\_\+vie}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+classe utilisée pour la gestion des Objets. 
+
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em pos\+\_\+x} & \+: entier définit la position en abscisse de l\textquotesingle{}objet \\
+\hline
+\mbox{\tt in}  & {\em pos\+\_\+y} & \+: entier définit la position en ordonnée de l\textquotesingle{}objet \\
+\hline
+\mbox{\tt in}  & {\em dir} & \+: entier définit la direction de déplacement futur de l\textquotesingle{}objet \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+vie} & \+: entier définit les points de vie de l\textquotesingle{}objet \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_object_a40860402e64d8008fb42329df7097cdb}\label{class_object_a40860402e64d8008fb42329df7097cdb}} 
+\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection{\texorpdfstring{Object()}{Object()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Object\+::\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+Constructeur par défaut de la classe \hyperlink{class_object}{Object} \mbox{\Hypertarget{class_object_abdc77f1bc660f185ecf2fc1a628ea6eb}\label{class_object_abdc77f1bc660f185ecf2fc1a628ea6eb}} 
+\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection{\texorpdfstring{Object()}{Object()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Object\+::\+Object (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Constructeur par copie. 
+
+Constructeur par copie de la classe \hyperlink{class_object}{Object}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & \+: entier correspondant à pos\+\_\+x \\
+\hline
+{\em y} & \+: entier correspondant à pos\+\_\+y \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_object_ae013d3c24ca77287536bfc594f763b60}\label{class_object_ae013d3c24ca77287536bfc594f763b60}} 
+\index{Object@{Object}!est\+Vivant@{est\+Vivant}}
+\index{est\+Vivant@{est\+Vivant}!Object@{Object}}
+\subsubsection{\texorpdfstring{est\+Vivant()}{estVivant()}}
+{\footnotesize\ttfamily bool Object\+::est\+Vivant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renvoit true si l\textquotesingle{}\hyperlink{class_objet}{Objet} à encore des points de vie et false sinon. 
+
+\mbox{\Hypertarget{class_object_ac2053fa5af98fc92a4c990946a926aa5}\label{class_object_ac2053fa5af98fc92a4c990946a926aa5}} 
+\index{Object@{Object}!get\+Dir@{get\+Dir}}
+\index{get\+Dir@{get\+Dir}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Dir()}{getDir()}}
+{\footnotesize\ttfamily int Object\+::get\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de la class \hyperlink{class_object}{Object}. 
+
+int \hyperlink{class_object_ac2053fa5af98fc92a4c990946a926aa5}{get\+Dir() const}; \mbox{\Hypertarget{class_object_ad7dcd5f1f45ce373c6e57bae5d1aebec}\label{class_object_ad7dcd5f1f45ce373c6e57bae5d1aebec}} 
+\index{Object@{Object}!get\+Pos\+\_\+x@{get\+Pos\+\_\+x}}
+\index{get\+Pos\+\_\+x@{get\+Pos\+\_\+x}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Pos\+\_\+x()}{getPos\_x()}}
+{\footnotesize\ttfamily int Object\+::get\+Pos\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de la class \hyperlink{class_object}{Object}. 
+
+int \hyperlink{class_object_ad7dcd5f1f45ce373c6e57bae5d1aebec}{get\+Pos\+\_\+x() const}; \mbox{\Hypertarget{class_object_a74b891ac92f211e8d8f9fd09d7822ec4}\label{class_object_a74b891ac92f211e8d8f9fd09d7822ec4}} 
+\index{Object@{Object}!get\+Pos\+\_\+y@{get\+Pos\+\_\+y}}
+\index{get\+Pos\+\_\+y@{get\+Pos\+\_\+y}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Pos\+\_\+y()}{getPos\_y()}}
+{\footnotesize\ttfamily int Object\+::get\+Pos\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de la class \hyperlink{class_object}{Object}. 
+
+int \hyperlink{class_object_a74b891ac92f211e8d8f9fd09d7822ec4}{get\+Pos\+\_\+y() const}; \mbox{\Hypertarget{class_object_a334099b7bd5ecf8515a1e8f3d96ebba9}\label{class_object_a334099b7bd5ecf8515a1e8f3d96ebba9}} 
+\index{Object@{Object}!get\+Vie@{get\+Vie}}
+\index{get\+Vie@{get\+Vie}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Vie()}{getVie()}}
+{\footnotesize\ttfamily int Object\+::get\+Vie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de la class \hyperlink{class_object}{Object}. 
+
+int \hyperlink{class_object_a334099b7bd5ecf8515a1e8f3d96ebba9}{get\+Vie() const}; \mbox{\Hypertarget{class_object_a98f9245de6001ab13932531b047ba595}\label{class_object_a98f9245de6001ab13932531b047ba595}} 
+\index{Object@{Object}!recevoir\+Degats@{recevoir\+Degats}}
+\index{recevoir\+Degats@{recevoir\+Degats}!Object@{Object}}
+\subsubsection{\texorpdfstring{recevoir\+Degats()}{recevoirDegats()}}
+{\footnotesize\ttfamily void Object\+::recevoir\+Degats (\begin{DoxyParamCaption}\item[{int}]{nb\+Degats }\end{DoxyParamCaption})}
+
+
+
+Enlève des points de vie à l\textquotesingle{}\hyperlink{class_objet}{Objet}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nb\+Degats} & \+: entier définit le nombre de points de vie à enlever \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_object_a6d72ba9034f1ea3a0866574705e938d3}\label{class_object_a6d72ba9034f1ea3a0866574705e938d3}} 
+\index{Object@{Object}!set\+Dir@{set\+Dir}}
+\index{set\+Dir@{set\+Dir}!Object@{Object}}
+\subsubsection{\texorpdfstring{set\+Dir()}{setDir()}}
+{\footnotesize\ttfamily void Object\+::set\+Dir (\begin{DoxyParamCaption}\item[{int}]{di }\end{DoxyParamCaption})}
+
+
+
+Mutateur de la class \hyperlink{class_object}{Object}. 
+
+void \hyperlink{class_object_a6d72ba9034f1ea3a0866574705e938d3}{set\+Dir(int di)}; \mbox{\Hypertarget{class_object_a65c8e1794d02320269340d22084d0807}\label{class_object_a65c8e1794d02320269340d22084d0807}} 
+\index{Object@{Object}!set\+Pos\+\_\+x@{set\+Pos\+\_\+x}}
+\index{set\+Pos\+\_\+x@{set\+Pos\+\_\+x}!Object@{Object}}
+\subsubsection{\texorpdfstring{set\+Pos\+\_\+x()}{setPos\_x()}}
+{\footnotesize\ttfamily void Object\+::set\+Pos\+\_\+x (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Mutateur de la class \hyperlink{class_object}{Object}. 
+
+void \hyperlink{class_object_a65c8e1794d02320269340d22084d0807}{set\+Pos\+\_\+x(int x)}; \mbox{\Hypertarget{class_object_a35340b9a66cc2d561ad370783c41fcac}\label{class_object_a35340b9a66cc2d561ad370783c41fcac}} 
+\index{Object@{Object}!set\+Pos\+\_\+y@{set\+Pos\+\_\+y}}
+\index{set\+Pos\+\_\+y@{set\+Pos\+\_\+y}!Object@{Object}}
+\subsubsection{\texorpdfstring{set\+Pos\+\_\+y()}{setPos\_y()}}
+{\footnotesize\ttfamily void Object\+::set\+Pos\+\_\+y (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Mutateur de la class \hyperlink{class_object}{Object}. 
+
+void \hyperlink{class_object_a35340b9a66cc2d561ad370783c41fcac}{set\+Pos\+\_\+y(int x)}; \mbox{\Hypertarget{class_object_a9e7f78b7cc24ebe4d11e8ce7b86c1d49}\label{class_object_a9e7f78b7cc24ebe4d11e8ce7b86c1d49}} 
+\index{Object@{Object}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Object@{Object}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void Object\+::set\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Mutateur de la class \hyperlink{class_object}{Object}. 
+
+void \hyperlink{class_object_a9e7f78b7cc24ebe4d11e8ce7b86c1d49}{set\+Position(int x, int y)}; \mbox{\Hypertarget{class_object_ac0880db52bcbcd3022278d62956d666e}\label{class_object_ac0880db52bcbcd3022278d62956d666e}} 
+\index{Object@{Object}!set\+Vie@{set\+Vie}}
+\index{set\+Vie@{set\+Vie}!Object@{Object}}
+\subsubsection{\texorpdfstring{set\+Vie()}{setVie()}}
+{\footnotesize\ttfamily void Object\+::set\+Vie (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+Mutateur de la class \hyperlink{class_object}{Object}. 
+
+void \hyperlink{class_object_ac0880db52bcbcd3022278d62956d666e}{set\+Vie(int v)}; 
+
+\subsection{Documentation des données membres}
+\mbox{\Hypertarget{class_object_a1267bc5eb5865f7ad9de7d822483c0e0}\label{class_object_a1267bc5eb5865f7ad9de7d822483c0e0}} 
+\index{Object@{Object}!dir@{dir}}
+\index{dir@{dir}!Object@{Object}}
+\subsubsection{\texorpdfstring{dir}{dir}}
+{\footnotesize\ttfamily int Object\+::dir\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_object_a1710b8b8e0d814406f84ca905d411e69}\label{class_object_a1710b8b8e0d814406f84ca905d411e69}} 
+\index{Object@{Object}!p\+\_\+vie@{p\+\_\+vie}}
+\index{p\+\_\+vie@{p\+\_\+vie}!Object@{Object}}
+\subsubsection{\texorpdfstring{p\+\_\+vie}{p\_vie}}
+{\footnotesize\ttfamily int Object\+::p\+\_\+vie\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_object_a2fc9911a2ee453f97ccfad331dc29e3a}\label{class_object_a2fc9911a2ee453f97ccfad331dc29e3a}} 
+\index{Object@{Object}!pos\+\_\+x@{pos\+\_\+x}}
+\index{pos\+\_\+x@{pos\+\_\+x}!Object@{Object}}
+\subsubsection{\texorpdfstring{pos\+\_\+x}{pos\_x}}
+{\footnotesize\ttfamily int Object\+::pos\+\_\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_object_a5acac61f66b23f32ad2ed7aa2e93c307}\label{class_object_a5acac61f66b23f32ad2ed7aa2e93c307}} 
+\index{Object@{Object}!pos\+\_\+y@{pos\+\_\+y}}
+\index{pos\+\_\+y@{pos\+\_\+y}!Object@{Object}}
+\subsubsection{\texorpdfstring{pos\+\_\+y}{pos\_y}}
+{\footnotesize\ttfamily int Object\+::pos\+\_\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Ragnar\+L/\+Documents/p1408299-\/p1309837/\+Revenges\+Island/src/core/\hyperlink{_object_8h}{Object.\+h}\item 
+C\+:/\+Users/\+Ragnar\+L/\+Documents/p1408299-\/p1309837/\+Revenges\+Island/src/core/\hyperlink{_object_8cpp}{Object.\+cpp}\end{DoxyCompactItemize}

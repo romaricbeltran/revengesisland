@@ -1,0 +1,240 @@
+\hypertarget{class_jeu}{}\section{Référence de la classe Jeu}
+\label{class_jeu}\index{Jeu@{Jeu}}
+
+
+{\ttfamily \#include $<$Jeu.\+h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_jeu_acc5795ee00edf75516d3dfe65be3e6d6}{Jeu} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+const \hyperlink{class_terrain}{Terrain} \& \hyperlink{class_jeu_af7e7bd59e117f78b9d8623fd76230ca3}{get\+Const\+Terrain} () const
+\begin{DoxyCompactList}\small\item\em Accesseur de la class \hyperlink{class_jeu}{Jeu}. \end{DoxyCompactList}\item 
+const \hyperlink{class_navigateur}{Navigateur} \& \hyperlink{class_jeu_af2d070e73c6c9bd9dc3cf09d110a82eb}{get\+Const\+Navigateur} () const
+\begin{DoxyCompactList}\small\item\em Accesseur de la class \hyperlink{class_jeu}{Jeu}. \end{DoxyCompactList}\item 
+const \hyperlink{class_ennemi}{Ennemi} \& \hyperlink{class_jeu_a9266f571dc8cfacdf01e6f13d8a13568}{get\+Const\+Ennemi} () const
+\begin{DoxyCompactList}\small\item\em Accesseur de la class \hyperlink{class_jeu}{Jeu}. \end{DoxyCompactList}\item 
+const \hyperlink{class_equipage}{Equipage} \& \hyperlink{class_jeu_a8831cd95b6bf8984712e212a9db537cf}{get\+Const\+Equipage} () const
+\begin{DoxyCompactList}\small\item\em Accesseur de la class \hyperlink{class_jeu}{Jeu}. \end{DoxyCompactList}\item 
+const \hyperlink{class_shoot}{Shoot} \& \hyperlink{class_jeu_af71805735942a00e774ab906a3019ddf}{get\+Constshoot\+Nav} () const
+\begin{DoxyCompactList}\small\item\em Accesseur de la class \hyperlink{class_jeu}{Jeu}. \end{DoxyCompactList}\item 
+const \hyperlink{class_shoot}{Shoot} \& \hyperlink{class_jeu_ae864beb5c3c85c1d152dedf39c838254}{get\+Constshoot\+En} () const
+\begin{DoxyCompactList}\small\item\em Accesseur de la class \hyperlink{class_jeu}{Jeu}. \end{DoxyCompactList}\item 
+const \hyperlink{class_shoot}{Shoot} \& \hyperlink{class_jeu_ac305ed7d05845e93da364408ddf23f7a}{get\+Constshoot\+Eq} () const
+\begin{DoxyCompactList}\small\item\em Accesseur de la class \hyperlink{class_jeu}{Jeu}. \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_a849e140df1504ddfd1e1eccc4374718f}{actions\+Automatiques} ()
+\begin{DoxyCompactList}\small\item\em Enclenche un deplacement aléatoire de l\textquotesingle{}ennemi, et un shoot de l\textquotesingle{}ennemi, du navigateur et de l\textquotesingle{}équipage. \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_ab27fb1db9e2ae2a0c19a90ecc838319f}{action\+Clavier} (const char touche)
+\begin{DoxyCompactList}\small\item\em Attribue des touches du claviers au mouvement du navigateur. \end{DoxyCompactList}\item 
+void \hyperlink{class_jeu_aa00e3f0a90d6b38c83c16700cdd15190}{changer\+Niveau} ()
+\begin{DoxyCompactList}\small\item\em Enclenche un changement de terrain lorsque le navigateur gagne un niveau. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_navigateur}{Navigateur} \hyperlink{class_jeu_a0ad4c146ac99e95600bdcfd55a13236c}{nav}
+\item 
+\hyperlink{class_ennemi}{Ennemi} \hyperlink{class_jeu_ab0d2c6597c665841833d051a05f8ba92}{en}
+\item 
+\hyperlink{class_equipage}{Equipage} \hyperlink{class_jeu_a558e9bff3ccad86850b319f7b95291c0}{eq}
+\item 
+\hyperlink{class_shoot}{Shoot} \hyperlink{class_jeu_ae29392e165aa69c1b841753b6b1b7b5e}{shoot\+Nav}
+\item 
+\hyperlink{class_shoot}{Shoot} \hyperlink{class_jeu_a66b2ea36a3649c7faf88fca2f07bdc97}{shoot\+En}
+\item 
+\hyperlink{class_shoot}{Shoot} \hyperlink{class_jeu_a07e0707082701c5d3306f1659028c3c1}{shoot\+Eq}
+\item 
+\hyperlink{class_terrain}{Terrain} \hyperlink{class_jeu_a6ef0d2feb24c59b28fe08059057e96ff}{ter}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+
+\begin{DoxyParams}[1]{Paramètres}
+\mbox{\tt in}  & {\em nav} & \hyperlink{class_navigateur}{Navigateur} \\
+\hline
+\mbox{\tt in}  & {\em en} & \hyperlink{class_ennemi}{Ennemi} \\
+\hline
+\mbox{\tt in}  & {\em eq} & \hyperlink{class_equipage}{Equipage} \\
+\hline
+\mbox{\tt in}  & {\em shoot\+Nav} & \hyperlink{class_shoot}{Shoot} du \hyperlink{class_navigateur}{Navigateur} \\
+\hline
+\mbox{\tt in}  & {\em shoot\+En} & \hyperlink{class_shoot}{Shoot} de l\textquotesingle{}\hyperlink{class_ennemi}{Ennemi} \\
+\hline
+\mbox{\tt in}  & {\em shoot\+Eq} & \hyperlink{class_shoot}{Shoot} de l\textquotesingle{}\hyperlink{class_equipage}{Equipage} \\
+\hline
+\mbox{\tt in}  & {\em ter} & \hyperlink{class_terrain}{Terrain} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_jeu_acc5795ee00edf75516d3dfe65be3e6d6}\label{class_jeu_acc5795ee00edf75516d3dfe65be3e6d6}} 
+\index{Jeu@{Jeu}!Jeu@{Jeu}}
+\index{Jeu@{Jeu}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{Jeu()}{Jeu()}}
+{\footnotesize\ttfamily Jeu\+::\+Jeu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+Constructeur par défaut de la classe \hyperlink{class_jeu}{Jeu} 
+
+\subsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_jeu_ab27fb1db9e2ae2a0c19a90ecc838319f}\label{class_jeu_ab27fb1db9e2ae2a0c19a90ecc838319f}} 
+\index{Jeu@{Jeu}!action\+Clavier@{action\+Clavier}}
+\index{action\+Clavier@{action\+Clavier}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{action\+Clavier()}{actionClavier()}}
+{\footnotesize\ttfamily void Jeu\+::action\+Clavier (\begin{DoxyParamCaption}\item[{const char}]{touche }\end{DoxyParamCaption})}
+
+
+
+Attribue des touches du claviers au mouvement du navigateur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em touche} & \+: un caractère \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_jeu_a849e140df1504ddfd1e1eccc4374718f}\label{class_jeu_a849e140df1504ddfd1e1eccc4374718f}} 
+\index{Jeu@{Jeu}!actions\+Automatiques@{actions\+Automatiques}}
+\index{actions\+Automatiques@{actions\+Automatiques}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{actions\+Automatiques()}{actionsAutomatiques()}}
+{\footnotesize\ttfamily void Jeu\+::actions\+Automatiques (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enclenche un deplacement aléatoire de l\textquotesingle{}ennemi, et un shoot de l\textquotesingle{}ennemi, du navigateur et de l\textquotesingle{}équipage. 
+
+\mbox{\Hypertarget{class_jeu_aa00e3f0a90d6b38c83c16700cdd15190}\label{class_jeu_aa00e3f0a90d6b38c83c16700cdd15190}} 
+\index{Jeu@{Jeu}!changer\+Niveau@{changer\+Niveau}}
+\index{changer\+Niveau@{changer\+Niveau}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{changer\+Niveau()}{changerNiveau()}}
+{\footnotesize\ttfamily void Jeu\+::changer\+Niveau (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enclenche un changement de terrain lorsque le navigateur gagne un niveau. 
+
+\mbox{\Hypertarget{class_jeu_a9266f571dc8cfacdf01e6f13d8a13568}\label{class_jeu_a9266f571dc8cfacdf01e6f13d8a13568}} 
+\index{Jeu@{Jeu}!get\+Const\+Ennemi@{get\+Const\+Ennemi}}
+\index{get\+Const\+Ennemi@{get\+Const\+Ennemi}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{get\+Const\+Ennemi()}{getConstEnnemi()}}
+{\footnotesize\ttfamily const \hyperlink{class_ennemi}{Ennemi} \& Jeu\+::get\+Const\+Ennemi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de la class \hyperlink{class_jeu}{Jeu}. 
+
+\hyperlink{class_terrain}{Terrain}\& get\+Const\+Ennemi () const; \mbox{\Hypertarget{class_jeu_a8831cd95b6bf8984712e212a9db537cf}\label{class_jeu_a8831cd95b6bf8984712e212a9db537cf}} 
+\index{Jeu@{Jeu}!get\+Const\+Equipage@{get\+Const\+Equipage}}
+\index{get\+Const\+Equipage@{get\+Const\+Equipage}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{get\+Const\+Equipage()}{getConstEquipage()}}
+{\footnotesize\ttfamily const \hyperlink{class_equipage}{Equipage} \& Jeu\+::get\+Const\+Equipage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de la class \hyperlink{class_jeu}{Jeu}. 
+
+\hyperlink{class_terrain}{Terrain}\& get\+Const\+Equipage () const; \mbox{\Hypertarget{class_jeu_af2d070e73c6c9bd9dc3cf09d110a82eb}\label{class_jeu_af2d070e73c6c9bd9dc3cf09d110a82eb}} 
+\index{Jeu@{Jeu}!get\+Const\+Navigateur@{get\+Const\+Navigateur}}
+\index{get\+Const\+Navigateur@{get\+Const\+Navigateur}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{get\+Const\+Navigateur()}{getConstNavigateur()}}
+{\footnotesize\ttfamily const \hyperlink{class_navigateur}{Navigateur} \& Jeu\+::get\+Const\+Navigateur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de la class \hyperlink{class_jeu}{Jeu}. 
+
+\hyperlink{class_terrain}{Terrain}\& get\+Const\+Navigateur () const; \mbox{\Hypertarget{class_jeu_ae864beb5c3c85c1d152dedf39c838254}\label{class_jeu_ae864beb5c3c85c1d152dedf39c838254}} 
+\index{Jeu@{Jeu}!get\+Constshoot\+En@{get\+Constshoot\+En}}
+\index{get\+Constshoot\+En@{get\+Constshoot\+En}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{get\+Constshoot\+En()}{getConstshootEn()}}
+{\footnotesize\ttfamily const \hyperlink{class_shoot}{Shoot} \& Jeu\+::get\+Constshoot\+En (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de la class \hyperlink{class_jeu}{Jeu}. 
+
+\hyperlink{class_terrain}{Terrain}\& get\+Constshoot\+En () const; \mbox{\Hypertarget{class_jeu_ac305ed7d05845e93da364408ddf23f7a}\label{class_jeu_ac305ed7d05845e93da364408ddf23f7a}} 
+\index{Jeu@{Jeu}!get\+Constshoot\+Eq@{get\+Constshoot\+Eq}}
+\index{get\+Constshoot\+Eq@{get\+Constshoot\+Eq}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{get\+Constshoot\+Eq()}{getConstshootEq()}}
+{\footnotesize\ttfamily const \hyperlink{class_shoot}{Shoot} \& Jeu\+::get\+Constshoot\+Eq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de la class \hyperlink{class_jeu}{Jeu}. 
+
+\hyperlink{class_terrain}{Terrain}\& get\+Constshoot\+Eq () const; \mbox{\Hypertarget{class_jeu_af71805735942a00e774ab906a3019ddf}\label{class_jeu_af71805735942a00e774ab906a3019ddf}} 
+\index{Jeu@{Jeu}!get\+Constshoot\+Nav@{get\+Constshoot\+Nav}}
+\index{get\+Constshoot\+Nav@{get\+Constshoot\+Nav}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{get\+Constshoot\+Nav()}{getConstshootNav()}}
+{\footnotesize\ttfamily const \hyperlink{class_shoot}{Shoot} \& Jeu\+::get\+Constshoot\+Nav (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de la class \hyperlink{class_jeu}{Jeu}. 
+
+\hyperlink{class_terrain}{Terrain}\& get\+Constshoot\+Nav () const; \mbox{\Hypertarget{class_jeu_af7e7bd59e117f78b9d8623fd76230ca3}\label{class_jeu_af7e7bd59e117f78b9d8623fd76230ca3}} 
+\index{Jeu@{Jeu}!get\+Const\+Terrain@{get\+Const\+Terrain}}
+\index{get\+Const\+Terrain@{get\+Const\+Terrain}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{get\+Const\+Terrain()}{getConstTerrain()}}
+{\footnotesize\ttfamily const \hyperlink{class_terrain}{Terrain} \& Jeu\+::get\+Const\+Terrain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur de la class \hyperlink{class_jeu}{Jeu}. 
+
+\hyperlink{class_terrain}{Terrain}\& get\+Const\+Terrain () const; 
+
+\subsection{Documentation des données membres}
+\mbox{\Hypertarget{class_jeu_ab0d2c6597c665841833d051a05f8ba92}\label{class_jeu_ab0d2c6597c665841833d051a05f8ba92}} 
+\index{Jeu@{Jeu}!en@{en}}
+\index{en@{en}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{en}{en}}
+{\footnotesize\ttfamily \hyperlink{class_ennemi}{Ennemi} Jeu\+::en\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_jeu_a558e9bff3ccad86850b319f7b95291c0}\label{class_jeu_a558e9bff3ccad86850b319f7b95291c0}} 
+\index{Jeu@{Jeu}!eq@{eq}}
+\index{eq@{eq}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{eq}{eq}}
+{\footnotesize\ttfamily \hyperlink{class_equipage}{Equipage} Jeu\+::eq\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_jeu_a0ad4c146ac99e95600bdcfd55a13236c}\label{class_jeu_a0ad4c146ac99e95600bdcfd55a13236c}} 
+\index{Jeu@{Jeu}!nav@{nav}}
+\index{nav@{nav}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{nav}{nav}}
+{\footnotesize\ttfamily \hyperlink{class_navigateur}{Navigateur} Jeu\+::nav\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_jeu_a66b2ea36a3649c7faf88fca2f07bdc97}\label{class_jeu_a66b2ea36a3649c7faf88fca2f07bdc97}} 
+\index{Jeu@{Jeu}!shoot\+En@{shoot\+En}}
+\index{shoot\+En@{shoot\+En}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{shoot\+En}{shootEn}}
+{\footnotesize\ttfamily \hyperlink{class_shoot}{Shoot} Jeu\+::shoot\+En\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_jeu_a07e0707082701c5d3306f1659028c3c1}\label{class_jeu_a07e0707082701c5d3306f1659028c3c1}} 
+\index{Jeu@{Jeu}!shoot\+Eq@{shoot\+Eq}}
+\index{shoot\+Eq@{shoot\+Eq}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{shoot\+Eq}{shootEq}}
+{\footnotesize\ttfamily \hyperlink{class_shoot}{Shoot} Jeu\+::shoot\+Eq\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_jeu_ae29392e165aa69c1b841753b6b1b7b5e}\label{class_jeu_ae29392e165aa69c1b841753b6b1b7b5e}} 
+\index{Jeu@{Jeu}!shoot\+Nav@{shoot\+Nav}}
+\index{shoot\+Nav@{shoot\+Nav}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{shoot\+Nav}{shootNav}}
+{\footnotesize\ttfamily \hyperlink{class_shoot}{Shoot} Jeu\+::shoot\+Nav\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_jeu_a6ef0d2feb24c59b28fe08059057e96ff}\label{class_jeu_a6ef0d2feb24c59b28fe08059057e96ff}} 
+\index{Jeu@{Jeu}!ter@{ter}}
+\index{ter@{ter}!Jeu@{Jeu}}
+\subsubsection{\texorpdfstring{ter}{ter}}
+{\footnotesize\ttfamily \hyperlink{class_terrain}{Terrain} Jeu\+::ter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Ragnar\+L/\+Documents/p1408299-\/p1309837/\+Revenges\+Island/src/core/\hyperlink{_jeu_8h}{Jeu.\+h}\item 
+C\+:/\+Users/\+Ragnar\+L/\+Documents/p1408299-\/p1309837/\+Revenges\+Island/src/core/\hyperlink{_jeu_8cpp}{Jeu.\+cpp}\end{DoxyCompactItemize}

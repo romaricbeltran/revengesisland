@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project:  Fichier source de C:/Users/RagnarL/Documents/p1408299-p1309837/RevengesIsland/src/core/Terrain.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Terrain.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_terrain_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _TERRAIN_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _TERRAIN_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_terrain.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_terrain.html">Terrain</a></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;private :</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_terrain.html#a3daf4955d95ede05eca8addab03445cd">    9</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_terrain.html#a3daf4955d95ede05eca8addab03445cd">dimx</a>;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_terrain.html#a8ffa11e67f45e16389333431fab2110f">   10</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_terrain.html#a8ffa11e67f45e16389333431fab2110f">dimy</a>;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_terrain.html#a52f0fcf1c339c1c5ac1fb9b3146b8d75">   11</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="class_terrain.html#a52f0fcf1c339c1c5ac1fb9b3146b8d75">ter</a> [100][100];</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;public :</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_terrain.html#a7160a06ab07a86ed97d23374405e8ef6">Terrain</a> ();</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_terrain.html#a7160a06ab07a86ed97d23374405e8ef6">Terrain</a>(<span class="keywordtype">int</span> niveau);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_terrain.html#a939a702645ade7ce599f55c1b760cb26">estPositionValide</a> (<span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y) <span class="keyword">const</span>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">char</span> <a class="code" href="class_terrain.html#a60a33d464cfb8468e26f1b4dee525178">getXY</a> (<span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y) <span class="keyword">const</span>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_terrain.html#accb6cc4ab37641b10d6d0cc3c2d9b0cb">getDimX</a> () <span class="keyword">const</span>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_terrain.html#a60bc76d822c15ca30576bd747d156b48">getDimY</a> () <span class="keyword">const</span>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_terrain.html#a4e44d60542cfb60119468af5d24b69cd">getNumTer</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_terrain.html#a8982e144bbc068fb1904092edf327d75">setNumTer</a>(<span class="keywordtype">int</span> n);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_terrain.html#a52c2a50f1df6a2b67dc411a5ae76ae68">ChangeMap</a>(<span class="keywordtype">int</span> niveau);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_terrain.html#a97e790dd5379c05db3515d90b2f54b02">setDimX</a> (<span class="keywordtype">int</span> x);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_terrain.html#a4fad5f05f2d96ca8ad0cb6442c218df4">setDimY</a> (<span class="keywordtype">int</span> y);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_terrain_html"><div class="ttname"><a href="class_terrain.html">Terrain</a></div><div class="ttdef"><b>Definition:</b> Terrain.h:4</div></div>
+<div class="ttc" id="class_terrain_html_a4e44d60542cfb60119468af5d24b69cd"><div class="ttname"><a href="class_terrain.html#a4e44d60542cfb60119468af5d24b69cd">Terrain::getNumTer</a></div><div class="ttdeci">int getNumTer() const</div></div>
+<div class="ttc" id="class_terrain_html_a3daf4955d95ede05eca8addab03445cd"><div class="ttname"><a href="class_terrain.html#a3daf4955d95ede05eca8addab03445cd">Terrain::dimx</a></div><div class="ttdeci">int dimx</div><div class="ttdef"><b>Definition:</b> Terrain.h:9</div></div>
+<div class="ttc" id="class_terrain_html_a8982e144bbc068fb1904092edf327d75"><div class="ttname"><a href="class_terrain.html#a8982e144bbc068fb1904092edf327d75">Terrain::setNumTer</a></div><div class="ttdeci">void setNumTer(int n)</div></div>
+<div class="ttc" id="class_terrain_html_a7160a06ab07a86ed97d23374405e8ef6"><div class="ttname"><a href="class_terrain.html#a7160a06ab07a86ed97d23374405e8ef6">Terrain::Terrain</a></div><div class="ttdeci">Terrain()</div><div class="ttdef"><b>Definition:</b> Terrain.cpp:101</div></div>
+<div class="ttc" id="class_terrain_html_a60a33d464cfb8468e26f1b4dee525178"><div class="ttname"><a href="class_terrain.html#a60a33d464cfb8468e26f1b4dee525178">Terrain::getXY</a></div><div class="ttdeci">char getXY(const int x, const int y) const</div><div class="ttdef"><b>Definition:</b> Terrain.cpp:120</div></div>
+<div class="ttc" id="class_terrain_html_a97e790dd5379c05db3515d90b2f54b02"><div class="ttname"><a href="class_terrain.html#a97e790dd5379c05db3515d90b2f54b02">Terrain::setDimX</a></div><div class="ttdeci">void setDimX(int x)</div><div class="ttdef"><b>Definition:</b> Terrain.cpp:139</div></div>
+<div class="ttc" id="class_terrain_html_a8ffa11e67f45e16389333431fab2110f"><div class="ttname"><a href="class_terrain.html#a8ffa11e67f45e16389333431fab2110f">Terrain::dimy</a></div><div class="ttdeci">int dimy</div><div class="ttdef"><b>Definition:</b> Terrain.h:10</div></div>
+<div class="ttc" id="class_terrain_html_a52f0fcf1c339c1c5ac1fb9b3146b8d75"><div class="ttname"><a href="class_terrain.html#a52f0fcf1c339c1c5ac1fb9b3146b8d75">Terrain::ter</a></div><div class="ttdeci">char ter[100][100]</div><div class="ttdef"><b>Definition:</b> Terrain.h:11</div></div>
+<div class="ttc" id="class_terrain_html_a939a702645ade7ce599f55c1b760cb26"><div class="ttname"><a href="class_terrain.html#a939a702645ade7ce599f55c1b760cb26">Terrain::estPositionValide</a></div><div class="ttdeci">bool estPositionValide(const int x, const int y) const</div><div class="ttdef"><b>Definition:</b> Terrain.cpp:110</div></div>
+<div class="ttc" id="class_terrain_html_a52c2a50f1df6a2b67dc411a5ae76ae68"><div class="ttname"><a href="class_terrain.html#a52c2a50f1df6a2b67dc411a5ae76ae68">Terrain::ChangeMap</a></div><div class="ttdeci">void ChangeMap(int niveau)</div><div class="ttdef"><b>Definition:</b> Terrain.cpp:148</div></div>
+<div class="ttc" id="class_terrain_html_a4fad5f05f2d96ca8ad0cb6442c218df4"><div class="ttname"><a href="class_terrain.html#a4fad5f05f2d96ca8ad0cb6442c218df4">Terrain::setDimY</a></div><div class="ttdeci">void setDimY(int y)</div><div class="ttdef"><b>Definition:</b> Terrain.cpp:144</div></div>
+<div class="ttc" id="class_terrain_html_accb6cc4ab37641b10d6d0cc3c2d9b0cb"><div class="ttname"><a href="class_terrain.html#accb6cc4ab37641b10d6d0cc3c2d9b0cb">Terrain::getDimX</a></div><div class="ttdeci">int getDimX() const</div><div class="ttdef"><b>Definition:</b> Terrain.cpp:129</div></div>
+<div class="ttc" id="class_terrain_html_a60bc76d822c15ca30576bd747d156b48"><div class="ttname"><a href="class_terrain.html#a60bc76d822c15ca30576bd747d156b48">Terrain::getDimY</a></div><div class="ttdeci">int getDimY() const</div><div class="ttdef"><b>Definition:</b> Terrain.cpp:134</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
